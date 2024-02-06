@@ -1,37 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 *{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  font-family: Poppins;
+  box-sizing: border-box;;
 }
 body{
   display: flex;
   justify-content: center;
-  align-items: center;
   height: 100vh;
-  flex-direction: column;
+  align-items: center;
+  background-color: rgb(27, 29, 74);
 }
 .main{
-  border: 1px solid black;
-  padding: 20px 10px;
+  width: 400px;
+  /* color: white; */
+  /* background-color: white; */
+  color: black;
+  border-radius: 8px;
+  min-height: 100px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 15px;
 }
-
-input{
-  height: 30px;
-  margin-right: 10px;
-  padding-left: 8px;
-  width: 200px
-}
-button{
-  padding: 10px 10px;
-  background-color: blueviolet;
-  border: none;
-  color: white;
-  font-weight: 700;
-  border-radius: 5px;
-}
-h1{
+.main h1{
+  font-size: 30px;
   margin-bottom: 10px;
+  color: white;
+  width: 80%;
+  line-height: 35px;
+
+}
+.main h1 span{
+  color: rgb(2, 187, 2);
+}
+hr{
+  height: 4px;
+  width: 80%;
+  margin-bottom: 20px;
+  color:rgb(2, 187, 2) ;
+  background: rgb(2, 187, 2);
+}
+.input-icon{
+  width: 100%;
+  display: flex;
+  /* justify-content: ; */
+  align-items: center;
+  margin-bottom: 20px;
+}
+.input-icon i{
+  color: black;
+  margin-left: -30px;
+  margin-top: -3px;
+  cursor: pointer;
+  /* display: none; */
+}
+.main input{
+  /* margin-bottom: 10px; */
+  padding: 10px 5px;
+  font-size: 15px;
+  width: 100%
+}
+.main button{
+  margin-bottom: 10px;
+  background-color: red;
+  border: none;
+  padding: 10px 15px;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 10px;
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main button i{
+  margin-right: 5px;
+}
+.result{
+  height: 50px;
+  border: 2px solid black;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
